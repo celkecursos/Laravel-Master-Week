@@ -33,6 +33,11 @@ Executar as migrations para criar a base de dados e as tabelas.
 php artisan migrate
 ```
 
+Executar as seed para cadastrar registro de teste.
+```
+php artisan db:seed
+```
+
 Iniciar o projeto criado com Laravel.
 ```
 php artisan serve
@@ -47,6 +52,9 @@ Acessar o conteúdo criado com Laravel.
 ```
 http://127.0.0.1:8000
 ```
+
+Usuário: cesar@celke.com.br<br>
+Senha: 123456A#
 
 ## Sequencia para criar o projeto
 Criar o projeto com Laravel.

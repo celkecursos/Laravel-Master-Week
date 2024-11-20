@@ -15,20 +15,26 @@
 
     <div class="card p-4 shadow" style="width: 24rem">
         <main class="form-signin">
-            <form action="{{ route('user.index')}}">
-                <img class="mb-4" src="{{ asset('images/logo-define-100x100_v1.png') }}" alt="" width="72"
-                    height="72">
-                <h1 class="h3 mb-3 fw-normal">Área Restrita</h1>
+
+            <img class="mb-4" src="{{ asset('images/logo-define-100x100_v1.png') }}" alt="" width="72"
+                height="72">
+            <h1 class="h3 mb-3 fw-normal">Área Restrita</h1>
+
+            <x-alert />
+
+            <form action="{{ route('login.process') }}" method="POST">
+                @csrf
+                @method('POST')
 
                 <div class="form-floating mb-3">
                     <input type="email" name="email" class="form-control" id="email"
-                        placeholder="Digite o e-mail de usuário">
+                        placeholder="Digite o e-mail de usuário" value="{{ old('email') }}">
                     <label for="email">E-mail</label>
                 </div>
 
                 <div class="form-floating mb-3">
                     <input type="password" name="password" class="form-control" id="password"
-                        placeholder="Digite a senha">
+                        placeholder="Digite a senha" value="{{ old('password') }}">
                     <label for="password">Senha</label>
                 </div>
 
@@ -38,6 +44,11 @@
 
                 <p class="mt-3 mb-3 text-body-secondary text-center">Novo na Celke? <a href="#"
                         class="text-decoration-none">Escolha seus serviços</a> para começar!</p>
+
+                <p class="mt-3 mb-3 text-body-secondary text-center">
+                    Usuário: cesar@celke.com.br<br>
+                    Senha: 123456A#
+                </p>
             </form>
         </main>
     </div>

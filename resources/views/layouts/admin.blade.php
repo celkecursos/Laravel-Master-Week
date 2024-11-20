@@ -20,7 +20,7 @@
                     <li class="nav-item"><a href="{{ route('user.index')}}" class="nav-link">Dashboard</a></li>
                     <li class="nav-item"><a href="{{ route('user.index')}}" class="nav-link">Usuários</a></li>
 
-                    <li class="nav-item"><a href="{{ route('login')}}" class="nav-link">Sair</a></li>
+                    <li class="nav-item"><a href="{{ route('login.destroy')}}" class="nav-link">Sair</a></li>
                 </ul>
             </div>
         </div>
