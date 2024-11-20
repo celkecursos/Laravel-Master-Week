@@ -48,3 +48,33 @@ Inicializar um novo repositório Git.
 ```
 git init
 ```
+
+Adicionar todos os arquivos modificados no staging area - área de preparação.
+```
+git add .
+```
+
+Commit representa um conjunto de alterações.
+```
+git commit -m "Base do projeto"
+```
+
+Verificar em qual branch está.
+```
+git branch
+```
+
+Renomear a branch atual no Git para main.
+```
+git branch -M main
+```
+
+Adicionar um repositório remoto ao repositório local.
+```
+git remote add origin https://github.com/celkecursos/Laravel-Master-Week.git
+```
+
+Enviar os commits locais para um repositório remoto.
+```
+git push -u origin main
+```
