@@ -8,6 +8,46 @@ Código-fonte das lives sobre [Laravel Master Week]().<br>
 * GIT -Cnferir a instalação: git -v
 * MySQL 8 ou superior - Conferir a versão: mysql --version
 
+## Como rodar o projeto baixado
+
+Duplicar o arquivo ".env.example" e renomear para ".env".<br>
+Alterar no arquivo ".env" as credenciais do banco de dados.<br>
+
+Instalar as dependências do PHP.
+```
+composer install
+```
+
+Gerar a chave no arquivo ".env" - APP_KEY.
+```
+php artisan key:generate
+```
+
+Instalar as dependências do Node.js.
+```
+npm install
+```
+
+Executar as migrations para criar a base de dados e as tabelas.
+```
+php artisan migrate
+```
+
+Iniciar o projeto criado com Laravel.
+```
+php artisan serve
+```
+
+Executar as blibliotecas Node.js.
+```
+npm run dev
+```
+
+Acessar o conteúdo criado com Laravel.
+```
+http://127.0.0.1:8000
+```
+
 ## Sequencia para criar o projeto
 Criar o projeto com Laravel.
 ```
@@ -42,6 +82,40 @@ npm i --save bootstrap @popperjs/core
 Instalar o sass.
 ```
 npm i --save-dev sass
+```
+
+Criar a Controller
+```
+php artisan make:controller NomeController
+```
+```
+php artisan make:controller UserController
+```
+
+Criar a View.
+```
+php artisan make:view nome
+```
+```
+php artisan make:view users/show
+```
+
+Executar as migration para criar a base de dados e as tabelas.
+```
+php artisan migrate
+```
+
+Criar Seed para cadastrar registro de teste.
+```
+php artisan make:seeder NomeSeeder
+```
+```
+php artisan make:seeder UserSeeder
+```
+
+Executar as seed para cadastrar registro de teste.
+```
+php artisan db:seed
 ```
 
 ## Como usar o GitHub
