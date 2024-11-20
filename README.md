@@ -1,3 +1,5 @@
+Código-fonte das lives sobre [Laravel Master Week]().<br>
+
 ## Requisitos
 
 * PHP 8.2 ou superior - Conferir a versão: php -v
