@@ -121,10 +121,20 @@ php artisan make:seeder NomeSeeder
 php artisan make:seeder UserSeeder
 ```
 
+Criar um arquivo de Request com validações
+```
+php artisan make:request NomeDoRequest
+```
+```
+php artisan make:request CourseRequest
+```
+
 Executar as seed para cadastrar registro de teste.
 ```
 php artisan db:seed
 ```
+
+Traduzir para português [Módulo de linguagem pt-BR](https://github.com/lucascudo/laravel-pt-BR-localization).
 
 ## Como usar o GitHub
 
